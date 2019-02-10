@@ -1,0 +1,10 @@
+reset;
+#option solver lpsolve;
+option solver gurobi;
+model sched.mod;
+data sched.dat;
+solve;
+display rit;
+display x;
+display delta;
+
